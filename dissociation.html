@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <title>DissociationTutorial</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
+<link rel="shortcut icon" type="image/png" href="/images/uva.png" />
 <style type="text/css">
     /*!
 *
@@ -12745,7 +12745,7 @@ ECwBAAAAAIYQLAEAAAAAhhAsAQAAAACG/H8ibYJOC8KW2QAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The highlighted regions are denote the data that is used to calculate the relative dissociation, which is also contained in the <code>SpectrumDataFile</code> object.</p>
+<p>The highlighted regions denote the data that is used to calculate the relative dissociation, which is also contained in the <code>SpectrumDataFile</code> object.</p>
 
 </div>
 </div>
@@ -14521,12 +14521,12 @@ QzERERERERFFLIZiIiIiIiIiilj/ByfkLvkzoKhJAAAAAElFTkSuQmCC
 <div class="text_cell_render border-box-sizing rendered_html">
 <h4 id="2.2-Other-Options">2.2 Other Options<a class="anchor-link" href="#2.2-Other-Options">&#182;</a></h4><hr>
 <p>Below is the constructor for the <code>SpectrumDataFile</code> class</p>
-<div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">data_range</span><span class="o">=</span><span class="p">(</span><span class="mi">740</span><span class="p">,</span> <span class="mi">765</span><span class="p">),</span> <span class="n">peaks</span><span class="o">=</span><span class="p">(</span><span class="mi">741</span><span class="p">,</span> <span class="mf">752.5</span><span class="p">),</span> <span class="n">spacing</span><span class="o">=</span><span class="mf">6.5</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filepath</span><span class="p">,</span> <span class="n">data_range</span><span class="o">=</span><span class="p">(</span><span class="mi">740</span><span class="p">,</span> <span class="mi">765</span><span class="p">),</span> <span class="n">peaks</span><span class="o">=</span><span class="p">(</span><span class="mf">740.5</span><span class="p">,</span> <span class="mf">752.5</span><span class="p">),</span> <span class="n">spacing</span><span class="o">=</span><span class="mf">6.5</span><span class="p">):</span>
 </pre></div>
 <ul>
 <li><strong>filepath</strong>: required on creation</li>
 <li><strong>data_range</strong>: default value is (740, 765). This defines the wavelengths considered in all calculations and plots</li>
-<li><strong>peaks</strong>: default value is (741, 752.5). This defines where regions I and II start</li>
+<li><strong>peaks</strong>: default value is (740.5, 752.5). This defines where regions I and II start</li>
 <li><strong>spacing</strong>: default value is 6.5 (in nm). This defines the width of regions I and II</li>
 </ul>
 <p>You can change any of these on creation of the object; however, you can also change these parameters at any time after the object has been created. For example:</p>
